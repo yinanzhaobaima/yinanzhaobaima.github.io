@@ -108,20 +108,20 @@
 
 
   <meta name="description" content="参考网址：https://blog.csdn.net/xiaotaode2012/article/details/77234535 一、本地验证如何判断是本地验证呢？很多情况下感觉速度较快的返回信息则认为有可能是本地验证，但是有的时候需要根据抓报以及跟踪上传代码来分析出是否为本地验证。  删除验证方法绕过上传打开firebug，将光标选择上传模块。 onsubm:t=”return checkFi">
-<meta name="keywords" content="WEB,文件上传,i春秋">
+<meta name="keywords" content="WEB安全,文件上传,i春秋">
 <meta property="og:type" content="article">
 <meta property="og:title" content="i春秋文件上传实验总结">
 <meta property="og:url" content="http://yoursite.com/2019/05/03/i春秋文件上传实验总结/index.html">
 <meta property="og:site_name" content="怅雪浪粘天江影开">
 <meta property="og:description" content="参考网址：https://blog.csdn.net/xiaotaode2012/article/details/77234535 一、本地验证如何判断是本地验证呢？很多情况下感觉速度较快的返回信息则认为有可能是本地验证，但是有的时候需要根据抓报以及跟踪上传代码来分析出是否为本地验证。  删除验证方法绕过上传打开firebug，将光标选择上传模块。 onsubm:t=”return checkFi">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="file:///E:/%E5%90%84%E7%A7%8D%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/1551822859@qq.com/48b4ea985b00456bb5baedd4e2e96722/clipboard.png?ynotemdtimestamp=1556767854740">
-<meta property="og:image" content="file:///E:/%E5%90%84%E7%A7%8D%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/1551822859@qq.com/050cfd404f704760a6dfaa9508c8a3e2/clipboard.png?ynotemdtimestamp=1556767854740">
-<meta property="og:updated_time" content="2019-05-03T02:51:46.845Z">
+<meta property="og:image" content="http://pqwxw1oi9.bkt.clouddn.com/1.png">
+<meta property="og:image" content="http://pqwxw1oi9.bkt.clouddn.com/2.png">
+<meta property="og:updated_time" content="2019-05-06T00:13:57.097Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="i春秋文件上传实验总结">
 <meta name="twitter:description" content="参考网址：https://blog.csdn.net/xiaotaode2012/article/details/77234535 一、本地验证如何判断是本地验证呢？很多情况下感觉速度较快的返回信息则认为有可能是本地验证，但是有的时候需要根据抓报以及跟踪上传代码来分析出是否为本地验证。  删除验证方法绕过上传打开firebug，将光标选择上传模块。 onsubm:t=”return checkFi">
-<meta name="twitter:image" content="file:///E:/%E5%90%84%E7%A7%8D%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/1551822859@qq.com/48b4ea985b00456bb5baedd4e2e96722/clipboard.png?ynotemdtimestamp=1556767854740">
+<meta name="twitter:image" content="http://pqwxw1oi9.bkt.clouddn.com/1.png">
 
 
 
@@ -411,16 +411,46 @@
                 
               
 
-              <time title="创建时间：2019-05-03 10:46:46 / 修改时间：10:51:46" itemprop="dateCreated datePublished" datetime="2019-05-03T10:46:46+08:00">2019-05-03</time>
+              <time title="创建时间：2019-05-03 10:46:46" itemprop="dateCreated datePublished" datetime="2019-05-03T10:46:46+08:00">2019-05-03</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-06 08:13:57" itemprop="dateModified" datetime="2019-05-06T08:13:57+08:00">2019-05-06</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB安全/" itemprop="url" rel="index"><span itemprop="name">WEB安全</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -490,7 +520,7 @@
 <p>空格的作用主要用于隔开图片文件和一句话，避免一句话解析混乱。</p>
 <hr>
 <h4 id="利用00截断绕过上传限制"><a href="#利用00截断绕过上传限制" class="headerlink" title="利用00截断绕过上传限制"></a>利用00截断绕过上传限制</h4><p>点击上传抓到包之后，可以看到，filename 后面即是我们当前上传的路径，uploading则是保存在服务器上的地址。</p>
-<p><img src="file:///E:/%E5%90%84%E7%A7%8D%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/1551822859@qq.com/48b4ea985b00456bb5baedd4e2e96722/clipboard.png?ynotemdtimestamp=1556767854740" alt="image"></p>
+<p><img src="http://pqwxw1oi9.bkt.clouddn.com/1.png" alt="image"></p>
 <p>现在我们将uploadimg改为uploadimg/1.php .jpg ，接着我们来到 Proxy-&gt;intercept-&gt;Hex找到1.php .jpg这个被修改过的代码，找到同一行的数字20，改为00 按一下回车，返回。</p>
 <p>注意 ：20(空格字符的16进制)改成00(截断字符的16进制）这样以来。截断字符后面的都会被截断，也就是忽略掉了，所以uploadimg/1.php .jpg 就变成了uploadimg/1.php 达到了我们上传PHP文件的目的。</p>
 <p>返回Raw，看到uploadimg/1.php .jpg变成uploadimg/1.php□.jpg</p>
@@ -536,7 +566,7 @@
 <p>菜刀连接：</p>
 <p><a href="http://www.test.ichunqiu/uploadimg/1.php;1538707354.jpg" target="_blank" rel="noopener">http://www.test.ichunqiu/uploadimg/1.php;1538707354.jpg</a></p>
 <p>新生成的目录和文件同在uploadimg目录下</p>
-<p><img src="file:///E:/%E5%90%84%E7%A7%8D%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/1551822859@qq.com/050cfd404f704760a6dfaa9508c8a3e2/clipboard.png?ynotemdtimestamp=1556767854740" alt="image"></p>
+<p><img src="http://pqwxw1oi9.bkt.clouddn.com/2.png" alt="image"></p>
 <hr>
 <h4 id="利用Apache白名单解析缺陷绕过上传检测"><a href="#利用Apache白名单解析缺陷绕过上传检测" class="headerlink" title="利用Apache白名单解析缺陷绕过上传检测"></a>利用Apache白名单解析缺陷绕过上传检测</h4><p>将 yijuhua.php文件名加上后缀名为.7z。</p>
 <p><strong>7z格式是一种压缩文件的格式，但Apache不识别7z后缀，Apache解析文件时，如果后缀名不认识，则会继续向前解析，会解析到php，这就是Apache的解析漏洞。</strong></p>
@@ -600,7 +630,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/WEB/" rel="tag"># WEB</a>
+            <a href="/tags/WEB安全/" rel="tag"># WEB安全</a>
           
             <a href="/tags/文件上传/" rel="tag"># 文件上传</a>
           
@@ -638,15 +668,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/02/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/05/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -722,12 +752,31 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -747,7 +796,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
