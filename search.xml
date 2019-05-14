@@ -3,9 +3,9 @@
   <entry>
     <title><![CDATA[EXEC]]></title>
     <url>%2F2019%2F05%2F13%2FEXEC%2F</url>
-    <content type="text"><![CDATA[EXEC 打开链接题目提示no sign 查看源代码发现这一行 1&lt;meta language=&apos;utf-8&apos; editor=&apos;vim&apos;&gt; 想到vim信息泄露，于是访问/.index.php.swp成功下载了源代码 注意index前面有一个点 . 使用命令 1vim -r index.php.swp 用vim编辑器打开该文件，读到源代码如下： 审计源码发现： 1.只有当变量sign已经设置且非空； 并且以变量sign为参数的check函数返回值为1 才不会显示“no sign” 2.审计check函数只有参数number的每一个字符的ASCII值都不在’1’’到’9’的ASCII值范围内； 并且满足$number == ‘11259375’ 函数才能返回1 要满足以上两个条件，易知可用十六进制绕过 11259375的十六进制为0xabcdef，同时也满足每一个ascii码也不再0-9的范围内 故构造payload为： ?sign=0xabcdef3. 1setcookie(&apos;auth&apos;,&apos;tcp tunnel is forbidden!&apos;); 易知：TCP被禁止不能用curl命令 1//echo $result; 易知：打印被注释掉，cmd命令执行后没有回显 123/*flag in flag233.php*/ 最前面的注释告诉了我们flag文件的名称，那么我们直接用nc命令把flag文件下过来 4.具体实现 在公网服务器的控制台上运行命令 1nc -u -l -p 55566 -u udp -l listen -p port 即：nc作为server端启动一个udp的端口55566进行监听 在服务器134.175.18.182的55566udp端口接收文件flag2333.php 在服务器控制台上读取到payload]]></content>
+    <content type="text"><![CDATA[一、发现源码打开链接题目提示no sign 查看源代码发现这一行 1&lt;meta language=&apos;utf-8&apos; editor=&apos;vim&apos;&gt; 想到vim信息泄露，于是访问/.index.php.swp成功下载了源代码 注意index前面有一个点 . 使用命令 1vim -r index.php.swp 用vim编辑器打开该文件，读到源代码如下： 二、审计源码1.变量sign只有当变量sign已经设置且非空； 并且以变量sign为参数的check函数返回值为1 才不会显示“no sign” 2.check函数只有参数number的每一个字符的ASCII值都不在’1’’到’9’的ASCII值范围内； 并且满足$number == ‘11259375’ 函数才能返回1 要满足以上两个条件，易知可用十六进制绕过 11259375的十六进制为0xabcdef，同时也满足每一个ascii码也不再0-9的范围内 故构造payload为： ?sign=0xabcdef 3.其他1setcookie(&apos;auth&apos;,&apos;tcp tunnel is forbidden!&apos;); 易知：TCP被禁止不能用curl命令 1//echo $result; 易知：打印被注释掉，cmd命令执行后没有回显 123/*flag in flag233.php*/ 最前面的注释告诉了我们flag文件的名称，那么我们直接用nc命令把flag文件下过来 三、获得flag 在公网服务器的控制台上运行命令 1nc -u -l -p 55566 -u udp -l listen -p port 即：nc作为server端启动一个udp的端口55566进行监听 在服务器134.175.18.182的55566udp端口接收文件flag2333.php 在服务器控制台上读取到payload]]></content>
       <categories>
-        <category>-CTF</category>
+        <category>CTF</category>
       </categories>
       <tags>
         <tag>WEB安全</tag>

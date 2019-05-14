@@ -107,22 +107,22 @@
 
 
 
-  <meta name="description" content="EXEC  打开链接题目提示no sign 查看源代码发现这一行 1&amp;lt;meta language=&amp;apos;utf-8&amp;apos; editor=&amp;apos;vim&amp;apos;&amp;gt; 想到vim信息泄露，于是访问/.index.php.swp成功下载了源代码  注意index前面有一个点 .   使用命令 1vim -r index.php.swp 用vim编辑器打开该文件，读到源代码如">
+  <meta name="description" content="一、发现源码打开链接题目提示no sign 查看源代码发现这一行 1&amp;lt;meta language=&amp;apos;utf-8&amp;apos; editor=&amp;apos;vim&amp;apos;&amp;gt; 想到vim信息泄露，于是访问/.index.php.swp成功下载了源代码  注意index前面有一个点 .   使用命令 1vim -r index.php.swp 用vim编辑器打开该文件，读到源代码">
 <meta name="keywords" content="WEB安全,nc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="EXEC">
 <meta property="og:url" content="http://yoursite.com/2019/05/13/EXEC/index.html">
 <meta property="og:site_name" content="怅雪浪粘天江影开">
-<meta property="og:description" content="EXEC  打开链接题目提示no sign 查看源代码发现这一行 1&amp;lt;meta language=&amp;apos;utf-8&amp;apos; editor=&amp;apos;vim&amp;apos;&amp;gt; 想到vim信息泄露，于是访问/.index.php.swp成功下载了源代码  注意index前面有一个点 .   使用命令 1vim -r index.php.swp 用vim编辑器打开该文件，读到源代码如">
+<meta property="og:description" content="一、发现源码打开链接题目提示no sign 查看源代码发现这一行 1&amp;lt;meta language=&amp;apos;utf-8&amp;apos; editor=&amp;apos;vim&amp;apos;&amp;gt; 想到vim信息泄露，于是访问/.index.php.swp成功下载了源代码  注意index前面有一个点 .   使用命令 1vim -r index.php.swp 用vim编辑器打开该文件，读到源代码">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://pqwxw1oi9.bkt.clouddn.com/1.jpg">
 <meta property="og:image" content="http://pqwxw1oi9.bkt.clouddn.com/2.jpg">
 <meta property="og:image" content="http://pqwxw1oi9.bkt.clouddn.com/3.jpg">
 <meta property="og:image" content="http://pqwxw1oi9.bkt.clouddn.com/4.jpg">
-<meta property="og:updated_time" content="2019-05-13T12:21:48.909Z">
+<meta property="og:updated_time" content="2019-05-14T02:36:33.168Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EXEC">
-<meta name="twitter:description" content="EXEC  打开链接题目提示no sign 查看源代码发现这一行 1&amp;lt;meta language=&amp;apos;utf-8&amp;apos; editor=&amp;apos;vim&amp;apos;&amp;gt; 想到vim信息泄露，于是访问/.index.php.swp成功下载了源代码  注意index前面有一个点 .   使用命令 1vim -r index.php.swp 用vim编辑器打开该文件，读到源代码如">
+<meta name="twitter:description" content="一、发现源码打开链接题目提示no sign 查看源代码发现这一行 1&amp;lt;meta language=&amp;apos;utf-8&amp;apos; editor=&amp;apos;vim&amp;apos;&amp;gt; 想到vim信息泄露，于是访问/.index.php.swp成功下载了源代码  注意index前面有一个点 .   使用命令 1vim -r index.php.swp 用vim编辑器打开该文件，读到源代码">
 <meta name="twitter:image" content="http://pqwxw1oi9.bkt.clouddn.com/1.jpg">
 
 
@@ -413,12 +413,24 @@
                 
               
 
-              <time title="创建时间：2019-05-13 20:18:27 / 修改时间：20:21:48" itemprop="dateCreated datePublished" datetime="2019-05-13T20:18:27+08:00">2019-05-13</time>
+              <time title="创建时间：2019-05-13 20:18:27" itemprop="dateCreated datePublished" datetime="2019-05-13T20:18:27+08:00">2019-05-13</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-14 10:36:33" itemprop="dateModified" datetime="2019-05-14T10:36:33+08:00">2019-05-14</time>
               
             
           </span>
@@ -435,7 +447,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CTF/" itemprop="url" rel="index"><span itemprop="name">-CTF</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CTF/" itemprop="url" rel="index"><span itemprop="name">CTF</span></a></span>
 
                 
                 
@@ -477,9 +489,8 @@
       
 
       
-        <h4 id="EXEC"><a href="#EXEC" class="headerlink" title="EXEC"></a>EXEC</h4><hr>
-<p><img src="http://pqwxw1oi9.bkt.clouddn.com/1.jpg" alt="image"></p>
-<p>打开链接题目提示no sign</p>
+        <p><img src="http://pqwxw1oi9.bkt.clouddn.com/1.jpg" alt="image"></p>
+<h3 id="一、发现源码"><a href="#一、发现源码" class="headerlink" title="一、发现源码"></a>一、发现源码</h3><p>打开链接题目提示no sign</p>
 <p>查看源代码发现这一行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta language=&apos;utf-8&apos; editor=&apos;vim&apos;&gt;</span><br></pre></td></tr></table></figure>
 <p>想到vim信息泄露，于是访问/.index.php.swp成功下载了源代码</p>
@@ -490,11 +501,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim -r index.php.swp</span><br></pre></td></tr></table></figure>
 <p>用vim编辑器打开该文件，读到源代码如下：</p>
 <p><img src="http://pqwxw1oi9.bkt.clouddn.com/2.jpg" alt="image"></p>
-<p>审计源码发现：</p>
-<p>1.只有当变量sign已经设置且非空；</p>
+<h3 id="二、审计源码"><a href="#二、审计源码" class="headerlink" title="二、审计源码"></a>二、审计源码</h3><h4 id="1-变量sign"><a href="#1-变量sign" class="headerlink" title="1.变量sign"></a>1.变量sign</h4><p>只有当变量sign已经设置且非空；</p>
 <p>并且以变量sign为参数的check函数返回值为1</p>
 <p>才不会显示“no sign”</p>
-<h4 id="2-审计check函数"><a href="#2-审计check函数" class="headerlink" title="2.审计check函数"></a>2.审计check函数</h4><p>只有参数number的每一个字符的ASCII值都不在’1’’到’9’的ASCII值范围内；</p>
+<h4 id="2-check函数"><a href="#2-check函数" class="headerlink" title="2.check函数"></a>2.check函数</h4><p>只有参数number的每一个字符的ASCII值都不在’1’’到’9’的ASCII值范围内；</p>
 <p>并且满足$number == ‘11259375’</p>
 <p>函数才能返回1</p>
 <blockquote>
@@ -502,15 +512,15 @@
 </blockquote>
 <p><strong>11259375的十六进制为0xabcdef，同时也满足每一个ascii码也不再0-9的范围内</strong></p>
 <p><strong>故构造payload为：</strong></p>
-<p><strong>?sign=0xabcdef</strong><br>3.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setcookie(&apos;auth&apos;,&apos;tcp tunnel is forbidden!&apos;);</span><br></pre></td></tr></table></figure>
+<p><strong>?sign=0xabcdef</strong></p>
+<h4 id="3-其他"><a href="#3-其他" class="headerlink" title="3.其他"></a>3.其他</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setcookie(&apos;auth&apos;,&apos;tcp tunnel is forbidden!&apos;);</span><br></pre></td></tr></table></figure>
 <p>易知：TCP被禁止不能用curl命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//echo $result;</span><br></pre></td></tr></table></figure>
 <p>易知：打印被注释掉，cmd命令执行后没有回显</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">flag in flag233.php</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
 <p>最前面的注释告诉了我们flag文件的名称，那么我们直接用nc命令把flag文件下过来</p>
-<h4 id="4-具体实现"><a href="#4-具体实现" class="headerlink" title="4.具体实现"></a>4.具体实现</h4><ul>
-<li>在公网服务器的控制台上运行命令</li>
+<h3 id="三、获得flag"><a href="#三、获得flag" class="headerlink" title="三、获得flag"></a>三、获得flag</h3><ul>
+<li><h5 id="在公网服务器的控制台上运行命令"><a href="#在公网服务器的控制台上运行命令" class="headerlink" title="在公网服务器的控制台上运行命令"></a>在公网服务器的控制台上运行命令</h5></li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc -u -l -p 55566</span><br></pre></td></tr></table></figure>
 <p>-u udp</p>
@@ -518,9 +528,9 @@
 <p>-p port</p>
 <p>即：nc作为server端启动一个udp的端口55566进行监听</p>
 <ul>
-<li>在服务器134.175.18.182的55566udp端口接收文件flag2333.php</li>
-<li><img src="http://pqwxw1oi9.bkt.clouddn.com/3.jpg" alt="image"></li>
-<li>在服务器控制台上读取到payload</li>
+<li><h5 id="在服务器134-175-18-182的55566udp端口接收文件flag2333-php"><a href="#在服务器134-175-18-182的55566udp端口接收文件flag2333-php" class="headerlink" title="在服务器134.175.18.182的55566udp端口接收文件flag2333.php"></a>在服务器134.175.18.182的55566udp端口接收文件flag2333.php</h5><p><img src="http://pqwxw1oi9.bkt.clouddn.com/3.jpg" alt="image"></p>
+</li>
+<li><h5 id="在服务器控制台上读取到payload"><a href="#在服务器控制台上读取到payload" class="headerlink" title="在服务器控制台上读取到payload"></a>在服务器控制台上读取到payload</h5></li>
 </ul>
 <p><img src="http://pqwxw1oi9.bkt.clouddn.com/4.jpg" alt="image"></p>
 
@@ -769,7 +779,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#EXEC"><span class="nav-number">1.</span> <span class="nav-text">EXEC</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-审计check函数"><span class="nav-number">2.</span> <span class="nav-text">2.审计check函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-具体实现"><span class="nav-number">3.</span> <span class="nav-text">4.具体实现</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、发现源码"><span class="nav-number">1.</span> <span class="nav-text">一、发现源码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、审计源码"><span class="nav-number">2.</span> <span class="nav-text">二、审计源码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-变量sign"><span class="nav-number">2.1.</span> <span class="nav-text">1.变量sign</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-check函数"><span class="nav-number">2.2.</span> <span class="nav-text">2.check函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-其他"><span class="nav-number">2.3.</span> <span class="nav-text">3.其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、获得flag"><span class="nav-number">3.</span> <span class="nav-text">三、获得flag</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#在公网服务器的控制台上运行命令"><span class="nav-number">3.0.1.</span> <span class="nav-text">在公网服务器的控制台上运行命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在服务器134-175-18-182的55566udp端口接收文件flag2333-php"><span class="nav-number">3.0.2.</span> <span class="nav-text">在服务器134.175.18.182的55566udp端口接收文件flag2333.php</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在服务器控制台上读取到payload"><span class="nav-number">3.0.3.</span> <span class="nav-text">在服务器控制台上读取到payload</span></a></li></ol></li></ol></div>
             
 
           </div>
